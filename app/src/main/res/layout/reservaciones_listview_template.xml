@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle"
+        android:layout_marginBottom="16dp"
+        >
+
+        <TextView android:id="@+id/lblCodSalon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Código de Salon" />
+
+        <TextView android:id="@+id/lblTiempoInicioEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:layout_below="@id/lblCodSalon"
+            android:text="Hora de inicio: "/>
+
+        <TextView android:id="@+id/lblTiempoInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:layout_below="@id/lblCodSalon"
+            android:layout_toRightOf="@id/lblTiempoInicioEtiqueta"
+            android:text="2" />
+
+        <TextView android:id="@+id/lblTiempoFinalEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:layout_below="@id/lblTiempoInicioEtiqueta"
+            android:text="Hora de retiro: " />
+
+        <TextView android:id="@+id/lblTiempoFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:layout_below="@id/lblTiempoInicioEtiqueta"
+            android:layout_toRightOf="@id/lblTiempoFinalEtiqueta"
+            android:text="2" />
+
+    </RelativeLayout>
+</LinearLayout>
